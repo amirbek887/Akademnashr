@@ -189,7 +189,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: opacity 0.4s ease;
 }
+.site-footer-top:hover {
+  opacity: 0.8;
+}
+.site-footer-top:active {
+  opacity: 0.6;
+}
+
 .site-footer-icons {
   display: flex;
   align-items: center;
@@ -222,9 +230,16 @@ body {
   color: #252420;
   line-height: 19px;
 }
-.site-footer-links:hover {
+.site-footer-links a:hover {
   color: #FF7500;
 }
 .site-footer-links a:active {
   color: #FF7500;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+.logo-link:active {
+  opacity: 0.6;
 }
