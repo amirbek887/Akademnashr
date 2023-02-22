@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -6,19 +8,29 @@ body {
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 :focus {
   outline: 2px dotted #FF7500;
   outline-offset: 3px;
 }
 .site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-top: 5px solid #FF7500;
   padding: 16px 0;
   background: #FFFFFF;
 }
-
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo-link {
   transition: opacity 0.4s ease;
 }
@@ -28,9 +40,7 @@ body {
 .logo-link:active {
   opacity: 0.6;
 }
-.logo-link img {
-  display: block;
-}
+
 .header-link {
   display: flex;
   align-items: center;
@@ -83,9 +93,6 @@ body {
 .button:hover {opacity: 0.8;}
 .button:active {opacity: 0.6;}
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 80px 0;
   background: #252420;
   color: #fff;
@@ -93,6 +100,11 @@ body {
 
 .hero-content {
   width: 390px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .orange-line {
   width: 80px;
@@ -117,8 +129,9 @@ body {
   width: 534px;
   height: 534px;
   border-radius: 8px;
+  box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
-.feature-section {
+.features-section {
   padding: 210px 0;
 }
 .features-heading {
@@ -148,30 +161,36 @@ body {
   justify-content: center;
   width: 100px;
   height: 100px;
+  margin-bottom: 32px;
   background-color: rgba(255, 119, 0, 0.5);
   border-radius: 50%;
 }
 .features-title {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 24px;
-  line-height: 120%;
-  width: 196px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 .features-text {
   line-height: 150%;
+  margin: 0;
 }
-
 .promo {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+.promo-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 120px 0 160px;
+  padding: 64px;
   border-radius: 12px;
   background: #252420;
   color: #FFFFFF;
 }
 .promo-content {
-  width: 1100px;
+  width: 440px;
 
 }
 .promo-heading {
@@ -261,8 +280,15 @@ body {
   width: 225px;
   line-height: 19px;
 }
+
 .site-footer-links:last-child {
  margin-right: 0;
+}
+.site-footer-links li {
+  margin-bottom: 16px;
+}
+.site-footer-links li:last-child {
+  margin-bottom: 0;
 }
 .site-footer-links a {
   font-family: "Roboto Condensed", sans-serif;
