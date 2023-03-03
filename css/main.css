@@ -1,10 +1,22 @@
+:root {
+  --text-font: "Roboto", "Arial", sans-serif;
+  --heading-font: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+}
 * {
   box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 0;
   margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #000;
+  letter-spacing: 0.5px;
 }
 
 *:focus {
@@ -16,7 +28,7 @@ body {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1160px;
+  max-width: 1140px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -28,7 +40,7 @@ body {
 .site-header {
   padding-top: 16px;
   padding-bottom: 16px;
-  border-top: 5px solid ;
+  border-top: 5px solid #ff7500;;
   background-color: #fff;
 }
 
@@ -107,7 +119,7 @@ body {
   font-size: 13px;
   line-height: 15px;
   font-weight: bold;
-  background-color: rgba(255, 117, 0, 0.6);
+  background-color: #ff7500;
   color: #fff;
   text-decoration: none;
   transition: opacity 0.4s ease;
@@ -147,7 +159,7 @@ body {
   border: 0;
   margin: 0;
   margin-bottom: 40px;
-  background-color: rgba(255, 117, 0, 0.6);
+  background-color: #ff7500;
 }
 
 .hero-heading {
@@ -155,7 +167,7 @@ body {
   margin-bottom: 24px;
   font-size: 40px;
   line-height: 1.2;
-  font-family: var(--heading-font);
+  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
 
 .hero-text {
@@ -166,7 +178,7 @@ body {
 .hero-img {
   position: absolute;
   right: 20px;
-  top: -40px;
+  top: -20px;
   width: 510px;
   height: 510px;
   border-radius: 8px;
@@ -185,7 +197,7 @@ body {
   margin-bottom: 72px;
   font-size: 72px;
   line-height: 1.2;
-  font-family: var(--heading-font);
+  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -223,7 +235,7 @@ body {
   margin-bottom: 12px;
   font-size: 24px;
   line-height: 1.2;
-  font-family: var(--heading-font);
+  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
 }
 
 .feature-info {
@@ -274,7 +286,7 @@ body {
 }
 
 .promo-highlight {
-  color: rgba(255, 117, 0, 0.6);
+  color: #ff7500;
 }
 
 .promo-img {
@@ -327,7 +339,7 @@ body {
 }
 
 .site-footer-socials a:hover {
-  color: rgba(255, 117, 0, 0.6);
+  color: #ff7500;
 }
 
 .site-footer-socials a:active {
@@ -377,7 +389,7 @@ body {
 }
 
 .site-footer-links a:hover {
-  color: rgba(255, 117, 0, 0.6);
+  color: #ff7500;
 }
 
 .site-footer-links a:active {
