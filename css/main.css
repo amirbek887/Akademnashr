@@ -6,7 +6,8 @@
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
 }
@@ -14,12 +15,18 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -56,12 +63,20 @@ body {
 }
 
 .site-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo-link {
+  -webkit-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
 }
 
@@ -78,13 +93,19 @@ body {
 }
 
 .site-header-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 
 /* SITENAV */
 .sitenav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
@@ -108,6 +129,10 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  -webkit-transition: color 0.4s ease,
+    opacity 0.4s ease;
+  -o-transition: color 0.4s ease,
+    opacity 0.4s ease;
   transition: color 0.4s ease,
     opacity 0.4s ease;
 }
@@ -132,6 +157,8 @@ body {
   background-color: var(--accent-color);
   color: #fff;
   text-decoration: none;
+  -webkit-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
 }
 
@@ -154,9 +181,15 @@ body {
 
 .hero-container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero-content {
@@ -192,7 +225,8 @@ body {
   width: 510px;
   height: 510px;
   border-radius: 8px;
-  box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
+  -webkit-box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
+          box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
 
 /* FEATURES */
@@ -212,6 +246,8 @@ body {
 }
 
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
@@ -230,9 +266,15 @@ body {
 }
 
 .feature-icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100px;
   height: 100px;
   margin-bottom: 32px;
@@ -261,9 +303,15 @@ body {
 
 .promo-inner {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 64px;
   border-radius: 12px;
   background-color: #252420;
@@ -306,7 +354,8 @@ body {
   width: 440px;
   height: 440px;
   border-radius: 12px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 
@@ -318,9 +367,15 @@ body {
 }
 
 .site-footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .site-footer ul {
@@ -329,8 +384,12 @@ body {
 }
 
 .site-footer-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: 0;
 }
@@ -369,6 +428,8 @@ body {
 }
 
 .site-footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
